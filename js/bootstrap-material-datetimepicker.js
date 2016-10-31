@@ -1145,6 +1145,8 @@
                  this.$dtpElement.removeClass('hidden');
                  this._attachEvent($(window), 'keydown', this._onKeydown.bind(this));
                  this._centerBox();
+                 var element = this.$dtpElement;
+                 setTimeout(function(){element.find('.dtp-btn-ok').focus()}, 0);
               },
               hide: function ()
               {
